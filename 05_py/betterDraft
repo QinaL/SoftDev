@@ -8,8 +8,9 @@
 # How to make a folder and file in github; what commiting, pushing, and pulling is (learned from Jessie and Google)
 # QUESTIONS
 # If our python knowledge is subpar, are we to make up for it/ catch up on our own using online resources?
+# What constitutes as robust and maintainable code?
 # COMMENTS
-# No additional comments
+# Readability looks good, but I do not know how robust and maintainable it is because I do not know robustness and maintainability means exactly
 
 
 import random
