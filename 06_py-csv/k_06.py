@@ -1,31 +1,32 @@
-# Cameron Nelson, Sophie Liu, Qina Liu
+# Tigers - Cameron Nelson, Sophie Liu, Qina Liu
+# SoftDev
+# K06 - Reading & Parsing CSV file 
+# 2021-09-28
 
 import random
 
-# opens file
 file = open("occupations.csv");
-# creates array w/ file
 lines = file.read().split("\n");
-splitlines = [];
-listjobs = [];
+del lines[0]; #Remove "Job Class, Percentage" line
+split = [];
 for i in lines:
     if "," in i:
+        #remove quotes, split string into job and %, then convert % to float
         i = i.replace("\"","");
         comma = i.rsplit(",",1);
-        listjobs.append(comma[0]);
-        splitlines.append(comma);
+        comma[1] = float(comma[1]);
+        #add to necessary arrays
+        split.append(comma);
 
-# deletes Job Class and Total (top and end)
-del splitlines[0];
-del listjobs[0];
-del listjobs[len(listjobs)-1];
-jobs = dict(splitlines);
+del split[len(split)-1]; # Remove "Total" as a job
+dictionary = dict(split)
 
-# generates a random occupation w/ a weighted percentage probability 
-randomNum = random.random() * float(jobs['Total']);
-for i in listjobs:
-    if randomNum < float(jobs[i]):
-        print(i);
-        break;
-    else:
-        randomNum -= float(jobs[i]);
+# Another array is needed because the numbers are currently being stored as strings. 
+numbers = []
+
+for i in dictionary:
+    numbers.append(dictionary.get(i));
+
+print(random.choices(list(dictionary), weights=numbers))
+#print(list(dictionary));
+#print(numbers);
