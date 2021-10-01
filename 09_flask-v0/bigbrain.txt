@@ -1,4 +1,4 @@
-TN: Qina Liu, Nyx, Andy Lin, Cappy
+TN: Andy Lin, Cappy, Qina Liu, Nyx
 SoftDev
 k09- Flask and app.py questions
 2021-10-01
@@ -11,3 +11,5 @@ Q3: This will not appear anywhere because it is a return for the function hello_
 Q4: The only other language I know is Java, and Java has similar syntax to this that it uses to call methods.
 
 After running flask:
+- I am getting an error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+- 
