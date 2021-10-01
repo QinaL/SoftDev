@@ -1,0 +1,13 @@
+TN: Qina Liu, Nyx, Andy Lin, Cappy
+SoftDev
+k09- Flask and app.py questions
+2021-10-01
+
+Before running flask:
+Q0: I only know Java. This looks vaguely familiar but not really.
+Q1: The main point of reference I have is that / is used to illustrate pathways.
+Q2: This will print to command terminal (?). It will print __name__ (idk what __name__ is)
+Q3: This will not appear anywhere because it is a return for the function hello_world, but the code never prints out this return.
+Q4: The only other language I know is Java, and Java has similar syntax to this that it uses to call methods.
+
+After running flask:
