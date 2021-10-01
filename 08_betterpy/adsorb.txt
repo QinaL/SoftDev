@@ -18,7 +18,7 @@ Other approaches
 
 Discoveries
 - Python's continue statement is used to skip an iteration in a loop 
-- Python's [link to Built-in Functions:](https://docs.python.org/3/library/functions.html) 
+- Python has documentation for its Built-in Functions (page bookmarked)
 
 Questions
 - Eric's code uses the function next(); I read the python documentation for it, but I still don't really understand how it works/what it does.
