@@ -1,4 +1,7 @@
 # Jesse Xie, Qina Liu, Patrick Ging
+# SoftDev
+# k05- Amalgamation of k05's code w/ new trio
+# 2021-09-27
 
 # SUMMARY OF TRIO DISCUSSION
 # I did not have my trio's work b/c of my lack of github knowledge, Jessie explained to me some basic functions of github, which was vv kind of him
