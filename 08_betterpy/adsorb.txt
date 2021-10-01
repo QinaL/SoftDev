@@ -1,1 +1,34 @@
+Supreme Greens: Qina Liu, Eric Guo, Cameron Nelson
+SoftDev
+k08- Cross Pollination of Classmates' k06 Code
+2021-09-30
+
+Trio's Code
+- Cameron and I had same code because we were from the same trio (Tigers)
+- Eric's trio's code imports csv and a with statement and uses it to read and covert the csv file into a dictionary, which is much a simplier and concise design than my trio's design
+- However my trio's code for doing weighted probabilities is more concise because it utlized a function python already had and only used 1 line, but Eric's code for weighted probabilities is pretty concise (and was our trio's initial design too)
+- Eric put an explanation for how input works, along with an example, which made it very easy to comprehend how his code works (I liked that)
+
+Other approaches
+- Andy's trio's code uses more comments that my trio's does; every line has a preceding comment explaining it, which aids comprehension of code (My trio should do that more) (their code uses an approach similar to my trio's approach)
+- Jesse's trio's code imports csv and uses a with statement, making the reading of the csv file very clean; the code for putting data in the dictionary is directly under the code for reading in data from the file, which is why I think their code is very clean (plus the fact that reading in file and creation of dictionary is done 5 lines (the shortest I seen))
+- Jessie's trio's code puts the weighted probability in a defined function(method?) called select_occupation and calls select_occupation later 
+- Jessie's trio's code uses an weighted probability approach similar to that of Eric's trio's code, but instead of going going up, they go down
+
+
+Discoveries
+- Python's continue statement is used to skip an iteration in a loop 
+- Python's [link to Built-in Functions:](https://docs.python.org/3/library/functions.html) 
+
+Questions
+- Eric's code uses the function next(); I read the python documentation for it, but I still don't really understand how it works/what it does.
+- What is the difference between a method and a function in python? Which is the correct terminology?
+- How do you create a defined function (+ what is the syntax for this)?
+
+Comments
+- No comments
+
+Concerns
+- Class time (face time with trio) was taken up by computer setting up (and slow connection) and other extraneous stuff, so these observations were made on my own; this text file does not have to be identical to my trio members, right?
+
 
