@@ -11,5 +11,11 @@ Q3: This will not appear anywhere because it is a return for the function hello_
 Q4: The only other language I know is Java, and Java has similar syntax to this that it uses to call methods.
 
 After running flask:
-- I am getting an error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+
+Qina's experience:
+- At first, I was getting an error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+    - Running the shell command export FLASK_ENV=development changed the environment to production, and I no longer got the error 
+        - info from https://pythonbasics.org/flask-environment-production/
 - 
+
+To Andy: Add your thoughts to the questions/fill in my gaps of knowledge. I no longer got an error, but nothing was printed, so idk what app.py did, add anything that you find. I'll check your github and then copy paste what u added.
