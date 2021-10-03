@@ -1,4 +1,4 @@
-TN: Andy Lin, Cappy, Qina Liu, Nyx
+Top Hat Cats: Andy Lin, Cappy, Qina Liu, Nyx
 SoftDev
 k09- Flask and app.py questions
 2021-10-01
@@ -6,16 +6,13 @@ k09- Flask and app.py questions
 Before running flask:
 Q0: I only know Java. This looks vaguely familiar but not really.
 Q1: The main point of reference I have is that / is used to illustrate pathways.
-Q2: This will print to command terminal (?). It will print __name__ (idk what __name__ is)
+Q2: This will print to command terminal. It will print __name__ (idk what __name__ is)
 Q3: This will not appear anywhere because it is a return for the function hello_world, but the code never prints out this return.
 Q4: The only other language I know is Java, and Java has similar syntax to this that it uses to call methods.
 
 After running flask:
 
-Qina's experience:
 - At first, I was getting an error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
     - Running the shell command export FLASK_ENV=development changed the environment to production, and I no longer got the error 
         - info from https://pythonbasics.org/flask-environment-production/
-- 
-
-To Andy: Add your thoughts to the questions/fill in my gaps of knowledge. I no longer got an error, but nothing was printed, so idk what app.py did, add anything that you find. I'll check your github and then copy paste what u added.
+- After I fixed the error, nothing happened or was printed, and I do not know where to go from here.
