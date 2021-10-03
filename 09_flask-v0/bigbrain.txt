@@ -15,4 +15,4 @@ After running flask:
 - At first, I was getting an error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
     - Running the shell command export FLASK_ENV=development changed the environment to production, and I no longer got the error 
         - info from https://pythonbasics.org/flask-environment-production/
-- After I fixed the error, nothing happened or was printed, and I do not know where to go from here.
+- After I fixed the error, nothing really happened, and I do not know where to go from here.
