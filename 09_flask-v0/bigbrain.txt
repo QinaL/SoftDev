@@ -5,7 +5,7 @@ K09- Flask and app.py questions
 
 Before running flask:
 
-Q0: Qina only know Java. This looks vaguely familiar but not really. I know Swift, Java, Lua, some C, and some C+, and this formatting doesn't strike me as familiar. However, throwing the code into a linter, the linter doesn't throw any errors for this. The closest thing Andy can think of is Swift and how it can detect these predefined variables for minor and major version numbers.
+Q0: Qina only know Java. This looks vaguely familiar but not really. Andy knows Swift, Java, Lua, some C, and some C+, and this formatting doesn't strike me as familiar. However, throwing the code into a linter, the linter doesn't throw any errors for this. The closest thing Andy can think of is Swift and how it can detect these predefined variables for minor and major version numbers.
 Q1: The main point of reference Qina have is that / is used to illustrate pathways. However, Andy think the "/" indicates that the script is looking at the main directory virtual enviroment.
 Q2: This will print to command terminal. It will print __name__ (we're not sure what __name__ is, however Andy guesses its the name of the instance?)
 Q3: This will not appear anywhere because it is a return for the function hello_world, but the code never prints out this return or gets assigned to a variable that would then get printed out.
