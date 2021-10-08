@@ -3,5 +3,8 @@ Penguins-
 
 Things learned:
 - trial and error with testing code that I'm not sure of is a great way to learn what the code does
+  - w3schools.com has a Tryit Editor that allows you to do exactly that and makes changing edits and running new code to try it very easy
 - title and heading are different things
-- 
+- the html template file has to be in a folder called templates or else it doesn't work
+- not all variables in the template have to be called in the parameters of render_template call, if a variable is not used, it simply does not show up in webpage
+- the head is the part that is not displayed in the web page, that is for body
