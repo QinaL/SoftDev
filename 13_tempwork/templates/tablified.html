@@ -7,10 +7,25 @@
   </head>
 
   <body>
+      <h> {{tn}} </h>
+      <hr>
+      <h2> {{descrip}} </h2>
+      <br>
+      {{random}}
+      <br>
+      
+      <table>
     {% for item in collection %}
-     {{ item }}
+     <tr>
+         <td>
+          {{ item }}
+         </td>
+     </tr>
      <br>
     {% endfor %}
+          
+      </table>
+      
   </body>
 
 </html>
