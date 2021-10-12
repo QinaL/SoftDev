@@ -8,3 +8,8 @@ Things learned:
 - the html template file has to be in a folder called templates or else it doesn't work
 - not all variables in the template have to be called in the parameters of render_template call, if a variable is not used, it simply does not show up in webpage
 - the head is the part that is not displayed in the web page, that is for body
+
+EGO:
+- Learn to get more eyes on your code
+- Don't take errors personally, don't be defensive 
+- no ego on the original code programmer, and no ego on the code reviewer 
