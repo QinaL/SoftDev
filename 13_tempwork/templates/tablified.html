@@ -1,5 +1,12 @@
 <!DOCTYPE html>
+<!-- 
+  The Penguins | Josephine Lee (Kitty), Qina Liu (Nyx), Roshani Shrestha (Pete)
+  SoftDev
+  K13: Template for Success - Template for app.py 
+  2021-10-13 
+-->
 
+<!DOCTYPE html>
 <html>
 
   <head>
@@ -7,25 +14,18 @@
   </head>
 
   <body>
-      <h> {{tn}} </h>
-      <hr>
-      <h2> {{descrip}} </h2>
-      <br>
-      {{random}}
-      <br>
-      
-      <table>
-    {% for item in collection %}
-     <tr>
-         <td>
-          {{ item }}
-         </td>
-     </tr>
+      <h1> {{ team }} </h1>
+      {{ header }}
+      <br> <br>
+      Random Occupation: {{ occupation }}
+      <br> <br>
+     <table>
+        <tr><th> Job </th> <th> Percentage </th></tr>
+        {% for key, value in data.items() %}
+            <tr><td> {{ key }} </td> <td> {{ value }} </td></tr>
+        {% endfor %}
+     </table>
      <br>
-    {% endfor %}
-          
-      </table>
-      
   </body>
 
 </html>
