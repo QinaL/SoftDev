@@ -1,41 +1,53 @@
-# Tigers - Cameron Nelson, Sophie Liu, Qina Liu
+# The Penguins | Josephine Lee (Kitty), Qina Liu (Nyx), Roshani Shrestha (Pete)
 # SoftDev
-# K06 - Reading & Parsing CSV file 
-# 2021-09-28
+# K13: Template for Success - Serves a templated page from localhost
+# 2021-10-13
 
 import random
-from flask import Flask
+from csv import DictReader
+from flask import Flask, render_template 
 app = Flask(__name__);
 
 @app.route("/")
-def hello_world():
-    file = open("occupations.csv");
-    lines = file.read().split("\n");
-    del lines[0]; #Remove "Job Class, Percentage" line
-    split = [];
-    for i in lines:
-        if "," in i:
-            #remove quotes, split string into job and %, then convert % to float
-            i = i.replace("\"","");
-            comma = i.rsplit(",",1);
-            comma[1] = float(comma[1]);
-            #add to necessary arrays
-            split.append(comma);
+def make_dict():
+    """ 
+    Makes dictionary with DictReader(). 
+    Each row is read and the job classes are set equal to the percentages in the dictionary. 
+    """
+    
+    filename = "data/occupations.csv"
+    dict = {} 
 
-    del split[len(split)-1]; # Remove "Total" as a job
-    dictionary = dict(split)
-    
-    html = "<h2> Tigers -- Cameron Nelson, Sophie Liu, Qina Liu </h2><hr>";
-    
-    html += "Random Weighted Job: " + (random.choices(list(dictionary), weights=dictionary.values()))[0] + "<br><br><br>";
-    
-    html += "<table> <tr> <th> Job </th> <th> Percentage </th> </tr>";
-    for i in list(dictionary):
-        html += "<tr>";
-        html += ("<td>" + i + "&nbsp;&nbsp;&nbsp;</td>");
-        html += ("<td>" + str(dictionary[i]) + "% </td>");
-        html += "</tr>";
-        
-    return html;
+    try:
+        with open(filename) as csvfile:
+            reader = DictReader(csvfile)
+            for row in reader: 
+                dict[row['Job Class']] = float(row['Percentage']) 
 
-app.run();
+            if 'Total' in dict.keys(): 
+                dict.pop('Total') 
+    
+    except FileNotFoundError: 
+        print('File "%s" does not exist' % (filename))
+
+    return dict
+
+def rand_occ(dictionary):
+    """ Chooses a random weighted occupation from the dictionary using random.choices(). """
+    return random.choices(list(dictionary), weights=dictionary.values())[0]
+
+dictionary = make_dict()
+team = "The Penguins: Josephine Lee (Kitty), Qina Liu (Nyx), and Roshani Shrestha (Pete)" 
+header = "This program displays a random occupation at the top of the page using occupations.csv. It also displays a tablified version of the occupations data."
+
+@app.route("/tablified_template") 
+def run_tmplt():
+    """ 
+    Serves template from localhost and replaces variables with values. 
+    The values include a title, heading, random occupation, and a dictionary of the occupations data.
+    """
+    return render_template( 'tablified.html', foo="K13: Template for Success", team=team, header=header, occupation=rand_occ(dictionary), data=dictionary) 
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
