@@ -1,5 +1,7 @@
-Penguins- 
-
+The Penguins | Josephine Lee (Kitty), Qina Liu (Nyx), Roshani Shrestha (Pete)
+SoftDev
+K13: Template for Success - Notes
+2021-10-13 
 
 Things learned:
 - trial and error with testing code that I'm not sure of is a great way to learn what the code does
