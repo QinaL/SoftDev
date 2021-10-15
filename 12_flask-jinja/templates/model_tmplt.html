@@ -12,9 +12,13 @@
   </head>
 
   <body>
-    {% for item in collection %}
-     {{ item }}
-     <br>
+    {% for key, values in collection %}
+      <tr>
+        <td>{{key}}</td>
+        {% for v in values[0] %}
+        <td>{{v}}</td>
+        {% endfor %}
+    </tr>
     {% endfor %}
   </body>
 
