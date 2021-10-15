@@ -1,8 +1,8 @@
 '''
-    Team Atom
-
-    Patrick Ging, Qina Liu, Joshua Kleopfar 
-    Period 2
+    Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+    SoftDev
+    k14 -- Forms in Flask
+    2021-10-14
 '''
 
 from flask import Flask             #facilitate flask webserving
