@@ -1,3 +1,10 @@
+''' 
+Team Atom: Patrick Ging, Qina Liu, Joshua Kleopfar | Period 2
+SoftDev
+k15 -Sessions Greetings
+2021-10-14
+'''
+
 from flask import Flask, render_template, request, session
 import os
 #dependencies....
