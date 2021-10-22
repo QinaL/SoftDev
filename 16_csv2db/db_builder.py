@@ -1,7 +1,7 @@
-#Team Atom - Patrick Ging Qina Liu Joshua Kleopfar
+#Team Atom - Patrick Ging, Qina Liu, Joshua Kleopfar
 #SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
-#Oct 21 2021
+#k16 -- SQLITE3 BASICS
+#2021-10-21
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
