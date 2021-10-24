@@ -84,7 +84,7 @@ def auth():
         '''
         if 'username' in session.keys() and 'password' in session.keys():
             #checking if the properties were logged into the keys
-            return render_template("response.html", 
+            return render_template("success.html", 
                 username = session['username'], 
                 password = session['password'], 
                 username_match= session['username'] == USERNAME,
