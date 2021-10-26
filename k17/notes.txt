@@ -1,0 +1,7 @@
+Team Atom: Joshua Kloepler, Patrick Ging, Qina Liu
+SoftDev
+k17 -- wiki building
+2021-10-25 
+
+Design done with components detailed and tasks assigned to each member
+- Patrick is not going to be present in class and will accomplish his tasks at home
