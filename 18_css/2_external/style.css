@@ -1,0 +1,41 @@
+body {
+           border-style: solid;
+              border-color: darkgrey;
+              border-width: 15px;
+              background-color: darkgrey;
+          }
+          
+          h1 {
+           color: white;
+              background-color: lightgrey;
+              text-align: center;
+          }
+          
+          a {
+           color: lightgrey;
+              font-weight: bold;
+              text-decoration: none;
+          }
+          
+          
+          .nav {
+           color: darkgrey;   
+          }
+          
+          .footnote {
+           color: darkgrey;
+              background-color: grey
+          }
+          
+          section {
+           display: flex; 
+              flex-flow: row wrap;
+          }
+          
+          article {
+           flex: 1;   
+          }
+          
+          article:nth-of-type(2){
+           flex: 3;  
+          }

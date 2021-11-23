@@ -1,0 +1,9 @@
+Qina Liu, Joshua Kloepfer
+SoftDev
+K18 -- CSS basics
+2021-11-22
+time spent: 1.5 hours
+
+- darkgrey is lighter than grey?!?
+- used lorem ipsum generator used: Bro Ipsum- http://www.broipsum.com/
+- used flex to do the side by side layout b/c tho mykolyk said it is possible to do so w/o flex, idk the alternative way and https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox was there and very helpful
