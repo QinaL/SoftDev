@@ -1,0 +1,9 @@
+Qina Liu, Joshua Kleopfar | Period 2
+SoftDev
+k19 -- NASA API
+11-23-2021
+time spent: .8 hour
+
+- there's urllib, urllib3, and urllib2 (all different)
+    - we used urllib
+- 

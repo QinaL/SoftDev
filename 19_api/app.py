@@ -1,3 +1,11 @@
+'''
+    Qina Liu, Joshua Kleopfar | Period 2
+    SoftDev
+    k19
+    11-23-2021
+    time spent: .6 hour
+'''
+
 from flask import Flask,render_template
 import urllib, json
 
