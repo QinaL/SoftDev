@@ -6,4 +6,5 @@ time spent: .8 hour
 
 - there's urllib, urllib3, and urllib2 (all different)
     - we used urllib
-- 
+    - urllib.request.urlopen() corresponds to the old urllib2.urlopen according to https://docs.python.org/3/library/urllib.request.html 
+- json.load() gives a python dictionary
