@@ -10,21 +10,23 @@
 
 <html>
     <head>
-        <title>Foundation</title>
+        <title>Bootstrap</title>
         <!-- Compressed CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <style>
             body{
              margin: 10px;   
+             background-color: #CCCCFF;
             }
         </style>
     </head>
     
     <body>
+        <!-- navbar on top of page -->
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-              <img src="https://ae01.alicdn.com/kf/H37cffc090e594c7caefdceaa7ef0e1b7s/Dinosaur-Cartoon-Wall-Clock-Simple-Silent-Kids-Art-Wall-Clock-Living-Room-Wood-Design-Zegary-Na.jpg" alt="" width="50" height="50">
+              <img src="https://www.seekpng.com/png/detail/268-2684823_littlest-pet-shop-clipart.png" alt="" width="75" height="50">
               Navbar
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +38,84 @@
                 <a class="nav-link active" href="#">Home</a>
               </div>
               <div class="nav-item">
-                <a class="nav-link" href="#">Page</a>
+                <a class="nav-link" href="#Why">Why?</a>
               </div>
               <div class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#Selection">Selection</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#buy">Buy!</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
+        
+        <h1> Welcome to WDC's Pet Shop!</h1> 
+        <br>
+        <a id="Why">
+        <h3>Why?</h3>
+        <div class="container-fluid">
+            Our animals are cute, cuddly, and charming! If you want a furry companion, you've come to the right place. We've got just the right pet for you. 
+        </div>
+        <br>
+        <a id="Selection">
+        <h3>See Our Selection of Animals!</h3>
+        <br>
+      <figure class="figure">
+      <img src="https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112194919-IF8HBNVNKAB2A8PTV9O9/javacatscafe18Feb20180118.jpg?format=2500w" class="img-fluid img-thumbnail" alt="...">
+    <figcaption class="figure-caption">
+      A lovely meow meow you can buy! 
+      <br>
+      Name: Gato, Age: 2 years old
+    </figcaption>
+    </figure>   
+        
+     <figure class="figure">
+      <img src="https://www.thesprucepets.com/thmb/3-kxAtZmAchP9y7PVFH2h1dKxqY=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg" class="img-fluid img-thumbnail" alt="...">
+    <figcaption class="figure-caption">
+      A cute pupper to bring home!
+      <br>
+      Name: Perro, Age: 6 months old
+    </figcaption>
+    </figure>   
+        
+        <figure class="figure">
+      <img src="https://www.thesprucepets.com/thmb/dmtwe9yJ8-UwTYW-uuHLCW9wkpo=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pet-parrot-on-human-hand-1022424278-5c3ded0ac9e77c00016e6e2b.jpg" class="img-fluid img-thumbnail" alt="...">
+    <figcaption class="figure-caption">
+      A pretty birdo to look at!
+      <br>
+      Name: Pajaro, Age: 3 years old
+    </figcaption>
+    </figure>   
+            
+        <br><br>
+            <a id="buy">
+        <h3>Wanna Buy An Animal? Place your order!</h3>
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Email:</label>
+          <input type="username" class="form-control" id="usernameInput" placeholder="example@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Credit Card Number:</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Credit Card Plz">
+          <div id="passwordHelp" class="form-text">This is very safe for you to input</div>
+        </div>
+          Animal I Want:
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Gato</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Perro</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Pajaro</label>
+        </div>
+        <button type="button" class="btn btn-outline-primary">Submit</button>
+      </form>
     </body>
     </html> 
