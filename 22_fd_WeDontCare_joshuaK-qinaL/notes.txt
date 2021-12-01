@@ -7,3 +7,6 @@ time spent: 2.9 hours
 ipsum generators used:
 - pirate ipsum: https://fungenerators.com/lorem-ipsum/pirate/ 
 - cat ipsum: http://www.catipsum.com/index.php#.YabwzOjYrPo
+- hipster ipsum: https://hipsum.co/?paras=5&type=hipster-centric&start-with-lorem=1
+- office ipsum: http://officeipsum.com/
+
