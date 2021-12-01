@@ -2,29 +2,87 @@
 <!--
     Qina Liu, Joshua Kleopfar | Period 2
     SoftDev
-    k19
-    11-23-2021
-    time spent: .8 hour
+    k22 -- Foundation Framework
+    11-30-2021
+    time spent: 2.5 hours
  -->
 
 
 <html>
     <head>
-        <title>Foundation Starter Template</title>
+        <title>Foundation</title>
         <!-- Compressed CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     </head>
+    
     <body>
-        <h1>new</h1>
+        <h1>Get Your Foundation Features Here!</h1>
+        <h3>Control the X-Grid!</h3>
         <div class="grid-x">
-  <div class="cell small-6">
-    <span>Cell</span>
-  </div>
-  <div class="cell small-6">
-    <span>Cell</span>
-  </div>
-</div>
-
+            <div class="cell small-4 medium-2 large-5" style="background-color: blue;">
+                 Cell 1
+             </div>
+            <div class="cell small-4 medium-5 large-5" style="background-color: purple;">
+                 Cell 2
+             </div>
+             <div class="cell small-4 medium-5 large-2" style="background-color: pink;">
+                 Cell 3
+             </div>
+           </div>
+        Each cell is given a different color to illustrate its boundaries. 
+        <br><br>
+        <h3>Change Screen Size!</h3>
+        Foundation allows you easier change how the site looks depending on the size of the screen: small-sized screen, medium-sized screen, or large-sized screen. 
+        <br><br>
+        <p style="font-style: italic;"> Try it Yourself! Change your screen size </p>
+        You will see that on a small screen, all 3 cells are equally sized, while on the medium screen, the Cell 1 becomes the smaller than the other 2, and on the large screen, Cell 3 becomes the smallest. Cool, right?
+        <br><br>
+        <h3>Control the Y-Grid!</h3>
+        The same can be done vertically!
+         <div class="grid-y" style="height:400px">
+            <div class="cell small-4 medium-2 large-5" style="background-color: blue;">
+                 Cell 1
+             </div>
+            <div class="cell small-4 medium-5 large-5" style="background-color: purple;">
+                 Cell 2
+             </div>
+             <div class="cell small-4 medium-5 large-2" style="background-color: pink;">
+                 Cell 3
+             </div>
+           </div>
+        <br><br>
+        <p style="font-weight: bold;"> WOW! VERY COOL!</p>
+        <br><br>
+        <h3>Combine Them To Get X-Y Grid</h3>
+        <!-- this doesn't work I have no clue how to make it work ;-; 
+        <div class="grid-y" style="height:500px">
+            <div class="medium-6 grid-container">
+           
+               <div class="grid-x">
+                  <div class="cell medium-4" style="background-color: blue;">
+                      Cool Cell 1
+                  </div>
+                <div class="cell medium-4" style="background-color: purple;">
+                    Cool Cell 2
+                  </div>
+                <div class="cell medium-4" style="background-color: pink;">
+                    Cool Cell 3
+                  </div>
+              </div>
+           </div>
+       <div class="medium-6 grid-container">
+            <div class="grid-x">
+              <div class="cell medium-4" style="background-color: gray;">
+               Uncool Cell 1
+               </div>
+              <div class="cell medium-8 medium-cell-block-y" style="background-color: darkgray;">
+                Uncool Cell 2
+             </div>
+           </div>
+            </div>
+        </div>
+        -->
+        
     </body>
 </html>
 
