@@ -2,7 +2,7 @@ Qina Liu, Joshua Kleopfar | Period 2
 SoftDev
 k22 -- Foundation Framework
 11-30-2021
-time spent: 2.5 hours
+time spent: 2.9 hours
 
 ipsum generators used:
 - pirate ipsum: https://fungenerators.com/lorem-ipsum/pirate/ 
