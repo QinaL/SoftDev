@@ -10,3 +10,6 @@ ipsum generators used:
 - hipster ipsum: https://hipsum.co/?paras=5&type=hipster-centric&start-with-lorem=1
 - office ipsum: http://officeipsum.com/
 
+grid-y sets up the stuff vertically rather than horizontally and changes in side affect height
+grid-x is horizontal
+small-[size], medium-[size], large-[size] are the size of cells depending on screen size
