@@ -6,4 +6,5 @@ time spent: 1.5 hours
 
 Q0: The on-ramp was very helpful, and the only thing we consulted other resources on was the button classes and how the color changed accordingly.
 
-Q1: We preferred Bootstrap.  We think Bootstrap seems a lot easier to understand and use.  When we were learning foundation it took us a decently long time to figure out what everything meant.  With Bootstrap, we were able to fairly easily and quickly to understand how everything works.
+Q1: We preferred Bootstrap.  We think Bootstrap seems a lot easier to understand and use.  When we were learning foundation it took us a decently long time to figure out
+what everything meant.  With Bootstrap, we were able to fairly easily and quickly to understand how everything works.
