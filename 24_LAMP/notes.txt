@@ -1,0 +1,32 @@
+Remarkable Divers - Andy Lin, Qina Liu, Roshani S
+SoftDev
+K24 - notes on setting up a LAMP server
+2022-01-13
+time spent: 0.6
+
+1. Make the Droplet 
+- Great guides on making a 20.04 droplet:
+    - https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ubuntu-20-04-server-on-a-digitalocean-droplet
+    - tldr press create then droplet then use the cheapest option, dont add any add ons, use ssh key that is on your system, use the closest server to us
+- Options to Pick
+    - Choose Ubuntu 20.04 (LTS) for this class
+    - Choose the Basic (shared CPU plan)
+    - Pick Regular Intel and $5/mo
+    - Choose a datacenter in New York
+    - Use SSH keys for authentication (see SSH Side-Route if trouble)
+    - We don't want to enable backups ($1/mo), our code will be stored on GitHub
+    - It is conventional to name servers in all lowercase
+
+~~~
+SSH Side-Route
+    - make sure you have a ssh key on your digital ocean account (Account --> Setting --> Security)
+    - "Your ( same set of) SSH keys can be used to authenticate you at multiple places. It's like your ID..."
+    - Good guide on getting SSH keys back: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+    - after checking for existing keys, run $ cat ~/.ssh/id_ed25519.pub (or the appropriate matching key name) and copy-paste into digital ocean account
+    - 
+~~~
+
+2. Access droplet 
+- if you want to access the droplet via a terminal, ssh as root to your ipv4 address and say yes for the fingerprint and you should be in
+
+great article on setting apache2 up: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
