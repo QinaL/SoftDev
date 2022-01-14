@@ -4,6 +4,8 @@ K24 - notes on setting up a LAMP server
 2022-01-13
 time spent: 0.6
 
+///temp how-to for now, will be imported to README and reshaped to be neater later
+
 1. Make the Droplet 
 - Great guides on making a 20.04 droplet:
     - https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ubuntu-20-04-server-on-a-digitalocean-droplet
@@ -28,5 +30,7 @@ SSH Side-Route
 
 2. Access droplet 
 - if you want to access the droplet via a terminal, ssh as root to your ipv4 address and say yes for the fingerprint and you should be in
+- $ ssh root@<ipv4 address>
+    - ex: $ ssh root@159.65.236.192
 
 great article on setting apache2 up: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04

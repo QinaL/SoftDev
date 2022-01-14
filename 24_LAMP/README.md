@@ -1,7 +1,9 @@
 # how-to :: DO THE THING
 ---
 ## Overview
-Why we care, what this will allow us to do, etc...
+- Using DigitalOcean to create servers
+- Install ubuntu 20.04.02 and apache2 
+- first part of LAMP (Linux, Apache, Mysql (swap for sqlite), Python/~~Pearl/PHP~~)
 
 ### Estimated Time Cost: _
 
