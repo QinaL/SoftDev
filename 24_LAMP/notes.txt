@@ -6,6 +6,8 @@ time spent:
 
 ///temp how-to for now, will be imported to README and reshaped to be neater later
 
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04 Creating server
+
 1. Make the Droplet 
 - Great guides on making a 20.04 droplet:
     - https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ubuntu-20-04-server-on-a-digitalocean-droplet
@@ -23,15 +25,104 @@ time spent:
 ~~~
 SSH Side-Route
     - make sure you have a ssh key on your digital ocean account (Account --> Setting --> Security)
-    - "Your ( same set of) SSH keys can be used to authenticate you at multiple places. It's like your ID..."
+    - "Your ( same set of) SSH keys can be used to authenticate you at multiple places. It's like your ID..." -mykolyk
     - Good guide on getting SSH keys back: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
     - after checking for existing keys, run $ cat ~/.ssh/id_ed25519.pub (or the appropriate matching key name) and copy-paste into digital ocean account
-    - 
 ~~~
 
-2. Access droplet 
+2. Access droplet as root
 - if you want to access the droplet via a terminal, ssh as root to your ipv4 address and say yes for the fingerprint and you should be in
-- $ ssh root@<ipv4 address>
+- $ ssh root@your_server_ip
     - ex: $ ssh root@159.65.236.192
+    
+3. Create new user
+- # adduser newuser
+- ex: # adduser sammy
+- will ask for password, full name, and other info that can be blank 
 
+4. Grant Administrative Privileges 
+- as root: # usermod -aG sudo newuser
+- gives root privileges to newuser; allows newuser to run commands w/ admin privileges by putting sudo before command
+- $ sudo ls -la /root to verify superuser privileges 
+
+~~
+sudo su if in newuser
+~~
+5. Set up Basic Firewall
+- commands to run:
+ufw app list
+ufw allow OpenSSH
+ufw enable
+ufw status
+should see 
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+
+
+
+6. Shut Off Root Access
+$ sudo nano /etc/ssh/sshd_config 
+$ sudo service ssh restart 
+
+
+
+~~~ 
+ssh on new user
+    - # su newuser to switch from root to user 
+    - exit to leave account 
+    - ssh-copy-id qina@159.89.235.223 (command to be run when not on server, exit out of server)
+    
+    - adding users to 
+
+ssh-copy-id username@remote_host
+
+https://thucnc.medium.com/how-to-create-a-sudo-user-on-ubuntu-and-allow-ssh-login-20e28065d9ff
+~~~
+ssh on user issue
+https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh
+# Change to no to disable tunnelled clear text passwords
+PasswordAuthentication yes
+Save the file and then run the following command to reload the SSH config:
+sudo service sshd reload
+then ssh-copy-id 
+
+1. Access droplet with root
+
+2. run this command 
+$ nano /etc/ssh/sshd_config
+
+3. Change PasswordAuthentication from no to yes 
+
+4. Exit Nano and reload SSH config 
+$ sudo service sshd reload
+
+5. Set up ssh key for account 
+$ ssh-copy-id username@droplet.ip
+
+6. Revert back to no for PasswordAuthentication (technically optional)
+~~~
+~/.ssh/authorized_keys to see ssh keys 
+~~~
+__ 
+
+APACHE 
 great article on setting apache2 up: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
+
+1. Run these commands
+(sudo su)
+# apt update 
+# apt install apache2
+# ufw app list
+# ufw allow in "Apache"
+# ufw status
+
+
+2. Check
+
+http://your_server_ip 
+
+should see Apache2 Ubuntu Default Page
