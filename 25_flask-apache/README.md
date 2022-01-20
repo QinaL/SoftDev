@@ -1,13 +1,12 @@
 # how-to :: Deploy Flask Application on an Ubuntu VPS
 ---
 ## Overview
-- allows our servers to deploy flask app
+- deploy flask app on our DO servers
 
 ### Estimated Time Cost: _
 
 ### Prerequisites:
-
-- have Flask, a virtual environment, and pip3 installed on Digital Ocean Droplet
+- have a Digital Ocean Droplet with Apache2 
 
 1. Install mod_wsgi (python3 version)
 ```
