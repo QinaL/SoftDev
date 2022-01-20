@@ -1,6 +1,14 @@
 Remarkable Divers - Andy Lin, Qina Liu, Roshani Shrestha
 SoftDev
-K24 - notes on setting up a LAMP server
-2022-01-13
-time spent: 
+K25 - deploying flask on droplet
+2022-01-19
+time spent: 2.5 hours
 
+troubleshoots:
+- pip install wheel
+- pip install flask
+- pip install uwsgi
+- pip install requests
+- make sure it's named __init__.py and it looks like
+    if __name__ == "__main__":
+        app.run('host=0.0.0.0')
