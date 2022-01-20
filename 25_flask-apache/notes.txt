@@ -1,14 +1,22 @@
-Remarkable Divers - Andy Lin, Qina Liu, Roshani Shrestha
-SoftDev
-K25 - deploying flask on droplet
-2022-01-19
+Remarkable Divers | Qina Liu, Andy Lin, Roshani Shrestha
+SoftDev pd2
+K25: Apache, Jump On It
+2022-01-18t
 time spent: 2.5 hours
 
-troubleshoots:
-- pip install wheel
-- pip install flask
-- pip install uwsgi
-- pip install requests
-- make sure it's named __init__.py and it looks like
+good documentation for deploying a flask app: 
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+
+useful documentation:
+https://github.com/ElizaKnapp/workshop-repo/tree/main/25_flask-apache 
+
+- mkdir FlaskApp then another subdirectory with the same name
+
+- troubleshoot using the four pip installs indicated in the how-to document:
+    pip install wheel
+    pip install flask
+    pip install uwsgi
+    pip install requests
+- make sure that this is in your __init__.py file:
     if __name__ == "__main__":
-        app.run('host=0.0.0.0')
+            app.run('host=0.0.0.0')
