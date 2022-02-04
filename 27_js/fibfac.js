@@ -16,7 +16,7 @@ var fact = (n) => {
   else {
     return (fact(n - 1) * n);
   }
-};
+}
 
 // prints fact 5 directly into dev console; gives 120, fact works!
 console.log(fact(5));
@@ -28,7 +28,7 @@ var fib = function(n) {
   else{
     return fib(n-1) + fib(n-2);
   }
-};
+}
 
 // gives 5 in dev console, fib fxn works!
 console.log(fib(5));

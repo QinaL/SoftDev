@@ -1,0 +1,18 @@
+Team (Liu)^2 :: Sophie Liu, Qina Liu
+SoftDev pd2
+K27 -- Basic functions in JavaScript
+2022-02-04
+
+DISCO
+-----------------------------------------------------------------
+* no need to declare any types; so in fxn parameters it's (n), not (int n)
+* console.log() prints stuff to dev console
+*
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why are there two ways to create functions?
+* Are there any differences in the result between the two function creation syntaxes?
+*
+=================================================================
