@@ -124,6 +124,7 @@ let fac = document.getElementById("fac");
 fac.addEventListener('click', addFac);
 
 // fib implementation
+
 let addFic = function(){
   addItem("7th Fibonacci: " + fib(7));
 }
@@ -136,3 +137,10 @@ let addGCD = function(){
 }
 let GCDButton = document.getElementById("gcd");
 GCDButton.addEventListener('click', addGCD);
+
+// extra
+let newlist = document.createElement("p");
+let green = document.getElementById("div1");
+green.appendChild(newlist);
+let ps = document.getElementsByTagName("p");
+ps[0].innerHTML = "hi";
