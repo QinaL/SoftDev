@@ -138,9 +138,11 @@ let addGCD = function(){
 let GCDButton = document.getElementById("gcd");
 GCDButton.addEventListener('click', addGCD);
 
-// extra
+/* extra
 let newlist = document.createElement("p");
 let green = document.getElementById("div1");
 green.appendChild(newlist);
 let ps = document.getElementsByTagName("p");
 ps[0].innerHTML = "hi";
+*/
+
