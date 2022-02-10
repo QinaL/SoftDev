@@ -1,0 +1,6 @@
+Team Quixotic Insects :: Qina Liu, Ivan Mijacika
+SoftDev pd2
+K29 -- DOM ++
+2022-02-10
+
+- .addEventListener only uses fxn name (does not need () ) and the fxn can't have a parameter

@@ -1,8 +1,8 @@
 /*
-     Team
+     Team Quixotic Insects :: Qina Liu, Ivan Mijacika
      SoftDev pd2
      K29 -- DOM ++
-     2022-02-
+     2022-02-10
    --------------------------------------------------
 */
 
@@ -131,3 +131,8 @@ let fibButton = document.getElementById("fib");
 fibButton.addEventListener('click', addFic);
 
 // gcd implementation
+let addGCD = function(){
+  addItem("GCD of 27 and 72: " + gcd(27, 72));
+}
+let GCDButton = document.getElementById("gcd");
+GCDButton.addEventListener('click', addGCD);
