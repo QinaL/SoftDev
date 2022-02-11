@@ -4,3 +4,5 @@ K29 -- DOM ++
 2022-02-10
 
 - .addEventListener only uses fxn name (does not need () ) and the fxn can't have a parameter
+- js has a print() and when called, it prints the web page
+- When a string is empty/null/undefined, in a if condition, it will return false

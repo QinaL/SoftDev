@@ -138,11 +138,35 @@ let addGCD = function(){
 let GCDButton = document.getElementById("gcd");
 GCDButton.addEventListener('click', addGCD);
 
-/* extra
+let facForm = document.getElementById("facFormButton");
+let formFxn = function(){
+  /*
+  let forms = document.getElementById("facForm");
+  for (i = 0; i < forms.length; i++){
+    console.log(forms[i].value);
+  }
+  */
+  // gets inputted number from form by user
+
+  let formNum = document.getElementById("facNum").value;
+  console.log(formNum)
+  let formSend 
+  /* if it's an emoty string, just returns 1, no catch for it yet
+  if (!formNum){
+    formSend = fact(formNum);
+  }
+  else{
+    formSend = "please input number";
+  }
+  */
+  addItem(fact(formNum));
+}
+facForm.addEventListener('click', formFxn)
+
+
 let newlist = document.createElement("p");
 let green = document.getElementById("div1");
 green.appendChild(newlist);
 let ps = document.getElementsByTagName("p");
 ps[0].innerHTML = "hi";
-*/
 
