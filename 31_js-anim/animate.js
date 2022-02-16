@@ -35,6 +35,9 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
+  if(requestID){
+    window.cancelAnimationFrame(requestID);
+  }
   clear();
   console.log("drawDot invoked...")
   ctx.beginPath();
@@ -83,6 +86,8 @@ var stopIt = () => {
   */
 };
 
+
+/* prev soln to accelerating issue, kept for posterity 
 var clickity = false;
 var clickTest = function() {
   if (!clickity) {
@@ -96,5 +101,6 @@ var clickTest2 = function() {
     stopIt();
   }
 }
-dotButton.addEventListener( "click", clickTest );
-stopButton.addEventListener( "click",  clickTest2 );
+*/
+dotButton.addEventListener( "click", drawDot );
+stopButton.addEventListener( "click",  stopIt );
