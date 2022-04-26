@@ -1,0 +1,46 @@
+Qina Liu
+SoftDev
+K34 -- MongoDB Video 
+2022-04-26
+time spent: 
+
+Video Notes 
+
+Concerns
+- when data dictates app development --> denormalize, restructure --> preformance drops 
+
+MongoDB
+- allows for multiple designs
+- designed for usage patterns
+- evo easy 
+
+Method 
+- evaluate app workload (size, operations)--> 
+- map out entities + rltions (CRD, link or embed?)--> 
+- finalize data model for each collection 
+
+Linked vs Embed
+- rltion: 1-1, 1-many, many-many
+- 1-many: array in parent, scalar in child
+- many-many: arrays on both side
+
+Use
+- if queries by article, embed all
+- if queries by articles + users, embed + link
+
+Bucket Pattern
+- small, related data (ex: bank transactions)
+- small index size
+- high speed of retrieval 
+
+Computed Pattern 
+- never recompute what you can recompute 
+- reads more common than write
+- caching patterns
+
+Can mix and match patterns!
+
+Sources
+- MongoDB Blog, MongoDB Developer Portal, MongoDB University
+- Book: Design Patterns: Elements of Reusable Object-Oriented Software
+
