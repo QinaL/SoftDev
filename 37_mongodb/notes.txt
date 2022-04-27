@@ -1,0 +1,35 @@
+Qina Liu
+Softdev
+K37 -- MongoDB Chapter 3
+2022-04-27
+
+- db.inspections.insert({ "name":"Inc", "date":"Jun 2"})
+	- _id has to be unique
+	- if not provided, will be automatically created
+- db.inspections.insert([{ "name":"Inc", "date":"Jun 2"}, {"name":"LLC", "date":"Jan 3"}])
+	- can insert multiple documents []
+	- will be done so in order 
+	- if preceding is error, subsequent won't be added
+	- add { "ordered":false } so unique documents even subsequent are added and duplicates are errors
+- if collection name used doesn't exist, collection will be created and docments will be added for you
+ 	- if misspell collection name, won't get error
+
+- [{}, {}, {}] for array of documents, {} for documents 
+
+- db.zips.updateMany({"city":"HUDSON"}, {"$inc": {"pop": 10}})
+	- updateMany() updates all that have city: "HUDSON"
+	- {"$inc"... is update operators that increases pop field value by 10
+- update operators 
+	- "$inc": increases 
+	- "$set": sets field value with specified value
+		- if field doesn't, it will be created    
+    *  can update multiple fields at once
+    *  see document for more
+- { $push: <field>:<value>, ...}
+	- adds element to an array field 
+
+- db.inspections.deleteMany({"test": 1}) to delete documents with matching ield 
+- db.inspections.drop() to delete inspections collection
+	- removing all collections deletes database 
+
+
