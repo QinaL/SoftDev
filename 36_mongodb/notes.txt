@@ -1,0 +1,17 @@
+Qina Liu
+Softdev
+K36 -- MongoDB Chapter 2
+2022-04-27
+
+- json: mongoexport, mongoimport
+- bson: mongodump, mongorestore 
+
+- show dbs
+- use sample_training
+- show collections
+
+- db.zips.find({"state":"NY"})
+- it to iterate thru cursor 
+- db.zips.find({"state":"NY", "city":"ALBANY"}).count()
+- db.zips.find({"state":"NY", "city":"ALBANY"}).pretty()
+

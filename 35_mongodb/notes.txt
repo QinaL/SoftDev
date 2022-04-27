@@ -1,0 +1,14 @@
+Qina Liu
+Softdev
+K35 -- MongoDB Chapter 1
+2022-04-47
+
+Atlas connect
+- connect
+- connect with mongo shell
+- i have mongo shell
+- mongo shell version (mongosh --version for version)
+- connection string
+- username: m001-student
+- pw: m001-mongodb-basics
+
