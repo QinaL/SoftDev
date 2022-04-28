@@ -1,0 +1,43 @@
+Qina Liu
+Softdev
+K39 -- MongoDB Chapter 5
+2022-04-28
+
+db.listings.aggregate([
+	{ $match : {"amenities":"Wifi"} },
+	{ $project: {"price":1, "address":1} }
+])
+	- aggregration framework is another way to query
+		- can do whatever MQL does, but also more!
+	- order matters, pipeline 
+
+- $group
+- $sum
+
+- cursor methods 
+	- count(), pretty()
+	- sort()
+	- limit()
+- ex: db.zips.find().sort({"pop":1)).limit(1)
+	- "pop":-1 would be descending order
+	- cursor.limit().sort() means cursor.sort().limit()
+
+- indexes 
+	- datastructure to optimize data queries
+	- db.trips.createIndex({"birth year":1}) makes db.trips.find({"birth year": 1989}) faster
+	- avoids sorting 
+
+- data modeling 
+	- stored in the way it is used 
+	- if regularly queried together, should be stored together
+
+- upsert
+	- anything that locates can modify 
+	- upsert = update + insert
+	- use when needed 
+	- db.collection.updateOne({<query>}, {<update>}, {"upsert":true})
+	- if match, updates; if no match, inserts
+		- if query predicate return empty cursor, update creates new document 
+	- when update is not enough on own, updating + inserting 
+	- default false, have to specificy value as true to use
+	-

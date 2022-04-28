@@ -1,0 +1,10 @@
+Qina Liu
+Softdev
+K40 -- MongoDB Chapter 6
+2022-04-28
+
+- Atlas Aggegration can preview pipeline, export to programming language
+- Charts create visualization of data 
+- Compass is Mongo's GUI Product
+
+- Certificate wow

@@ -25,7 +25,7 @@ K38 -- MongoDB Chapter 4
 - $push: adds element to array
 - {"array": {"$size":20, "$all": ["thing0", "thing2"]}}
 
-- find({"amentities":"Wifi"}, {"price":1, "address":1)
+- find({"amentities":"Wifi"}, {"price":1, "address":1})
 	- only returns price and address in cursor result
 	- db.<collection>.find({ <query> }, { <projection> })
 	- 1 means include field, 0 means exclude field 
