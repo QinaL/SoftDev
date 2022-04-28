@@ -1,0 +1,40 @@
+Qina Liu
+Softdev
+K38 -- MongoDB Chapter 4
+2022-04-27
+
+- $ne: no equal 
+- $eq: equals 
+- $gt: greater than
+- $lt: less than 
+- $gte: greater or equal
+- $lte: less or equal
+
+- $and 
+	- default when operator not specified
+	- need to be explicit when using same operator more than once in query  
+- $or
+- $nor 
+- $not (only 1 clause)
+- ex: {"$or": [{airport: "K"}, {airport: "L"}]}
+
+- $expr: comparing fields within documents
+
+- $ denotes an operator or can signify value of field
+
+- $push: adds element to array
+- {"array": {"$size":20, "$all": ["thing0", "thing2"]}}
+
+- find({"amentities":"Wifi"}, {"price":1, "address":1)
+	- only returns price and address in cursor result
+	- db.<collection>.find({ <query> }, { <projection> })
+	- 1 means include field, 0 means exclude field 
+		- dont mix 1 and 0 in projection, unless exclude _id
+- find({"array":{"$elemMatch":{"type":"special"}}})
+
+- "location.type":"Point"
+	- type is a field within field of location
+	- can be as deep as needed
+	- instead of field name, type, can be index (ex:location.0)
+
+
